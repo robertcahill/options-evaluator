@@ -7,9 +7,5 @@ dependencies = [
     "numpy>=2.5.2",
     "openpyxl>=3.1.5",
     "scipy>=1.18.1",
+    "streamlit>=1.63.0",
 ]
-
-# This folder lives on Google Drive (G:); uv's cache is on C:. Copy instead of
-# hardlink so installs don't warn on every sync.
-[tool.uv]
-link-mode = "copy"
