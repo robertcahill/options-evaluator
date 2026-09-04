@@ -1,0 +1,8 @@
+# Streamlit configuration. Applies both locally (`uv run streamlit run app.py`)
+# and when deployed to Streamlit Community Cloud.
+[theme]
+base = "light"
+primaryColor = "#1f4e79"          # matches the payoff-chart accent color
+
+[browser]
+gatherUsageStats = false
