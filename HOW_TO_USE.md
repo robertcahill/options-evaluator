@@ -1,5 +1,18 @@
 # Options Evaluator — Quick Start
 
+## Two ways to use it
+
+- **GUI (easiest):** a point-and-click app that combines BOTH tools (the strategy
+  evaluator and the vol scanner) in one window. Launch it with:
+
+      uv run streamlit run app.py
+
+  A browser tab opens. Fill in the fields, click the button, read the results,
+  and download the Excel/PNG. Nothing to edit. Works the same on Windows and Mac.
+
+- **Scripts (edit-and-run):** the original workflow, described below. You edit the
+  numbers in `evaluate.py` and run it from the terminal.
+
 ## Your repeatable process (4 steps, ~2 minutes)
 
 1. Open **thinkorswim** → Trade tab → pull up your ticker → look at the option chain.
@@ -40,7 +53,8 @@ If typed IV and "IV from mid" in the console differ by more than ~3 vol points, 
 - **Chart:** solid line = expiration; dashed = T+0 mark with IV held constant; shaded band = 1σ expected move (`S × IV × √T`). The ±40% zoom is the picture only.
 
 ## Files
-- **evaluate.py**          <- you edit this daily
+- **app.py**               <- the GUI (both tools in one window): `uv run streamlit run app.py`
+- **evaluate.py**          <- you edit this daily (script workflow)
 - **options_evaluator.py** <- the engine (leave alone; read to learn)
 - **vol_scanner.py**       <- IV vs realized vol (rich/cheap)
 - **pyproject.toml**       <- this folder's uv project (Python 3.14 + libraries)
