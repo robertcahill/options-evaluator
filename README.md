@@ -15,6 +15,20 @@ No brokerage account or API key is required: enter the numbers from any option
 chain by hand, and (optionally) pull free daily price history from Stooq for the
 vol scanner.
 
+## Open the app (no install needed)
+
+If someone has shared the hosted app with you, you don't need to install
+anything — just open the link in any web browser:
+
+**➡️ https://REPLACE-WITH-YOUR-APP.streamlit.app**
+
+That's it. Fill in the fields and click the button. On a phone or laptop, any
+modern browser works. (If the page says the app is "asleep," just wait a few
+seconds and it will wake up.)
+
+> Maintainer: replace the link above with your real Streamlit URL after you
+> deploy (see "Share it on the web" below).
+
 ## Run it locally
 
 This project uses [uv](https://docs.astral.sh/uv/) to manage Python and
