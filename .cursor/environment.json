@@ -1,0 +1,4 @@
+{
+  "name": "options-evaluator",
+  "install": "bash .cursor/install.sh"
+}
